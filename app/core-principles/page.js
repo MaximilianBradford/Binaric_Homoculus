@@ -7,11 +7,11 @@ const NeuralNetworkPage = () => {
            <header className="page-header">
   <nav className="main-nav">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/origins-&-history">History</a></li>
-      <li><a href="/core-principles">Neural Networks</a></li>
-      <li><a href="/demo">Demo</a></li>
-      <li><a href="/sources">Sources</a></li>
+      <li><Link href="/">Home</Link></li>
+      <li><Link href="/origins-&-history">History</Link></li>
+      <li><Link href="/core-principles">Neural Networks</Link></li>
+      <li><Link href="/demo">Demo</Link></li>
+      <li><Link href="/sources">Sources</Link></li>
     </ul>
   </nav>
 </header>
@@ -109,11 +109,11 @@ const NeuralNetworkPage = () => {
                     <p>
                     Neural network training requires precision and careful preparation of data. The available dataset is divided into two parts: 
                     a comprehensive set of training data, which contains examples for the network to learn from, and test data used to evaluate 
-                    the network's performance. The training process runs for a predetermined number of iterations called epochs. During each epoch, 
+                    the network&apos;s performance. The training process runs for a predetermined number of iterations called epochs. During each epoch, 
                     the network processes the training data through its current structure with specific weights and biases. After processing, 
                     it evaluates its performance against the test data and calculates the error. The network then adjusts its weights and biases 
                     before initiating another epoch. This cycle continues until the designated number of epochs is reached, gradually refining 
-                    the network's accuracy.
+                    the network&apos;s accuracy.
                     </p>
                 </div>
                 
@@ -151,7 +151,7 @@ const NeuralNetworkPage = () => {
                         <p>
                         Feedforward neural networks are one of the most common and easy to understand. Feedforward neural networks always feed information forward.
                         The input and output are entirely independent of each other and feedback loops are impossible. This architecture excels at pattern 
-                        recognition tasks and classification problems where historical context isn't needed.
+                        recognition tasks and classification problems where historical context isn&apos;t needed.
                         </p>
                     </div>
                     <div className="image-area" style={{ flex: '1 0 40%', padding: '0.75rem', display: 'flex', justifyContent: 'center' }}>
@@ -215,7 +215,7 @@ const NeuralNetworkPage = () => {
                     <h2>Neural Networks in Action</h2>
                     <p>
                         Now that you understand the theoretical foundations of neural networks, you can witness these principles
-                        applied in practice. Our interactive demonstration allows you to observe a neural network's learning process
+                        applied in practice. Our interactive demonstration allows you to observe a neural network&apos;s learning process
                         in real-time, providing insight into how these digital minds evolve and adapt.
                     </p>
                     <div className="button">

@@ -1,5 +1,6 @@
 import React from 'react';
 import './globals.css';
+import Link from 'next/link';
 
 const FrontPage = () => {
   const sections = [
@@ -25,11 +26,11 @@ const FrontPage = () => {
       <header className="page-header">
   <nav className="main-nav">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/origins-&-history">History</a></li>
-      <li><a href="/core-principles">Neural Networks</a></li>
-      <li><a href="/demo">Demo</a></li>
-      <li><a href="/sources">Sources</a></li>
+      <li><Link href="/">Home</Link></li>
+      <li><Link href="/origins-&-history">History</Link></li>
+      <li><Link href="/core-principles">Neural Networks</Link></li>
+      <li><Link href="/demo">Demo</Link></li>
+      <li><Link href="/sources">Sources</Link></li>
     </ul>
   </nav>
 </header>
