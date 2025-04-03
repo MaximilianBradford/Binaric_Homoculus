@@ -192,7 +192,7 @@ const NeuralNetworkPage = () => {
                         Convolutional Neural Networks (CNNs) are specialized for processing grid-like data such as images. 
                         They use mathematical operations called convolutions to extract features from input data. CNNs automatically 
                         learn spatial hierarchies of features through multiple layers that mimic how the visual cortex processes images. 
-                        They're predominantly used in computer vision tasks like image recognition, object detection, and facial recognition.
+                        They&apos;re predominantly used in computer vision tasks like image recognition, object detection, and facial recognition.
                         </p>
                     </div>
                     <div className="image-area" style={{ flex: '1 0 40%', padding: '0.75rem', display: 'flex', justifyContent: 'center' }}>
@@ -219,7 +219,7 @@ const NeuralNetworkPage = () => {
                         in real-time, providing insight into how these digital minds evolve and adapt.
                     </p>
                     <div className="button">
-                        <a href="/demo">Explore the Demo →</a>
+                        <Link href="/demo">Explore the Demo →</Link>
                     </div>
                 </div>
             </div>
