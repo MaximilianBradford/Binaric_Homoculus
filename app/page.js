@@ -1,103 +1,76 @@
-import Image from "next/image";
+import React from 'react';
+import './globals.css';
 
-export default function Home() {
+const FrontPage = () => {
+  const sections = [
+    { 
+      title: 'Origins & History', 
+      content: 'Explore the ancient beginnings and historical evolution through the ages.',
+      icon: '🏛️'
+    },
+    { 
+      title: 'Core Principles', 
+      content: 'Understand the fundamental concepts that form the foundation of this knowledge.',
+      icon: '✧'
+    },
+    { 
+      title: 'Demo', 
+      content: 'Discover how these timeless principles apply to contemporary challenges.',
+      icon: '⚙️'
+    },
+  ];
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen">
+      <header className="page-header">
+  <nav className="main-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/origins-&-history">History</a></li>
+      <li><a href="/core-principles">Neural Networks</a></li>
+      <li><a href="/demo">Demo</a></li>
+      <li><a href="/sources">Sources</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <main className="container ">
+        {/* Hero Section */}
+        <section className="ornate-border my-12 text-center content-center">
+          <h1>The Binaric Homoculus</h1>
+          <p className="text-xl mb-6">Unveiling the hidden knowledge of how computer can be made Man</p>
+          <p>Thinking is not only the right of humans</p>
+          {/* <div className="divider" /> */}
+        </section>
+
+        {/* Introduction */}
+        <section className="my-12">
+          <div className="gothic-card">
+            <h2>Illuminating the Digital Consciousness</h2>
+            <p>With the advent of LLMs and the use of ai in many sectors, it might tickle our non-binaric brains sense of curiosity about these technologies. How does ai work, and how did these systems come to be?</p>
+            <p>This website endeavors to inform the fascinating and interesting results of our desire to replicate our own intelligence in machines, a binaric homoculus.</p>
+          </div>
+        </section>
+
+        {/* Key Information Sections */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+          {sections.map((section) => (
+            <div key={section.title} className="gothic-card content-center">
+              <h3><span className="gothic-icon">{section.icon}</span>{section.title}</h3>
+              <p>{section.content}</p>
+              <a href={`/${section.title.toLowerCase().replace(/\s+/g, '-')}`} className="text-sm uppercase tracking-widest">Explore →</a>
+            </div>
+          ))}
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="border-t border-[var(--color-gold)] mt-12 py-6">
+        <div className="container text-center">
+          <p className="text-[var(--color-stone)]">© {new Date().getFullYear()} The Binaric Homoculus Institute</p>
+        </div>
       </footer>
     </div>
   );
-}
+};
+
+export default FrontPage;
