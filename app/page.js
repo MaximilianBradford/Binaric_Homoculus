@@ -6,17 +6,17 @@ const FrontPage = () => {
   const sections = [
     { 
       title: 'Origins & History', 
-      content: 'Explore the ancient beginnings and historical evolution through the ages.',
+      content: 'Explore the evolution of neural networks in the 20th century.',
       icon: '🏛️'
     },
     { 
       title: 'Core Principles', 
-      content: 'Understand the fundamental concepts that form the foundation of this knowledge.',
+      content: 'Understand the fundamental concepts that form the foundation of neural networks.',
       icon: '✧'
     },
     { 
       title: 'Demo', 
-      content: 'Discover how these timeless principles apply to contemporary challenges.',
+      content: 'Download the demo to see how to implement a neural network yourself.',
       icon: '⚙️'
     },
   ];
@@ -39,8 +39,7 @@ const FrontPage = () => {
         {/* Hero Section */}
         <section className="ornate-border my-12 text-center content-center">
           <h1>The Binaric Homoculus</h1>
-          <p className="text-xl mb-6">Unveiling the hidden knowledge of how computer can be made Man</p>
-          <p>Thinking is not only the right of humans</p>
+          <p className="text-xl mb-6">Unveiling the Hidden Knowledge of how Computer can be made to Think</p>
           {/* <div className="divider" /> */}
         </section>
 

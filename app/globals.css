@@ -219,6 +219,79 @@ input:focus, textarea:focus, select:focus {
   flex-direction: row;
 }
 
+/* Content sections with consistent spacing */
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Standardized image containers */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.neural-image {
+  max-width: 80%;
+  border: 1px solid var(--color-gold);
+  box-shadow: var(--shadow-ornate);
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+/* Image below layout */
+.content-section-vertical {
+  margin-bottom: 2rem;
+}
+
+.content-section-vertical h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section-vertical p {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.image-container-full {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+/* Image with caption */
+.image-figure {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-caption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--color-stone);
+  text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   html, body {
@@ -238,4 +311,52 @@ input:focus, textarea:focus, select:focus {
     margin: 0.5rem 0;
   }
   
+  .neural-image {
+    max-width: 100%;
+  }
+  
+  .content-row {
+    flex-direction: column;
+  }
+  
+  .image-container, .content-text, .image-container-full {
+    width: 100%;
+  }
+  
+}
+
+/* Add to globals.css */
+.github-button {
+  display: inline-block;
+  background-color: var(--color-blood);
+  color: var(--color-parchment);
+  padding: 0.8em 2em;
+  font-weight: 500;
+  border: 1px solid var(--color-gold);
+  margin: 1.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: var(--color-crimson);
+  transform: translateY(-2px);
+}
+
+.feature-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.feature-list li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  list-style-type: none;
+}
+
+.feature-list li:before {
+  content: "•";
+  color: var(--color-gold);
+  font-weight: bold;
+  position: absolute;
+  left: -1.2rem;
 }
