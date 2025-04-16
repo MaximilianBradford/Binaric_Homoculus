@@ -38,7 +38,7 @@ const FrontPage = () => {
       <main className="container ">
         {/* Hero Section */}
         <section className="ornate-border my-12 text-center content-center">
-          <h1>The Binaric Homoculus</h1>
+          <h1>The Binaric Homunculus</h1>
           <p className="text-xl mb-6">Unveiling the Hidden Knowledge of how Computer can be made to Think</p>
           {/* <div className="divider" /> */}
         </section>
@@ -48,7 +48,7 @@ const FrontPage = () => {
           <div className="gothic-card">
             <h2>Illuminating the Digital Consciousness</h2>
             <p>With the advent of LLMs and the use of ai in many sectors, it might tickle our non-binaric brains sense of curiosity about these technologies. How does ai work, and how did these systems come to be?</p>
-            <p>This website endeavors to inform the fascinating and interesting results of our desire to replicate our own intelligence in machines, a binaric homoculus.</p>
+            <p>This website endeavors to inform the fascinating and interesting results of our desire to replicate our own intelligence in machines, a binaric homunculus.</p>
           </div>
         </section>
 
